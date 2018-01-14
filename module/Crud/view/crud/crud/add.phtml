@@ -1,0 +1,26 @@
+<?php
+$form = $this->form;
+$form->prepare();
+?>
+
+<?= $this->form()->openTag($form); ?>
+	
+<?= $this->formLabel($form->get('title')); ?>
+<?= $this->formElement($form->get('title')); ?>
+<?= $this->formElementErrors($form->get('title')); ?>  
+	
+<?= $this->formLabel($form->get('description')); ?>
+<?= $this->formElement($form->get('description')); ?>
+<?= $this->formElementErrors($form->get('description')); ?>
+
+<?= $this->formLabel($form->get('date_start')); ?>
+<?= $this->formElement($form->get('date_start')); ?>
+<?= $this->formElementErrors($form->get('date_start')); ?>
+	
+<?= $this->formLabel($form->get('date_end')); ?>
+<?= $this->formElement($form->get('date_end')); ?>
+<?= $this->formElementErrors($form->get('date_end')); ?>
+   
+<?= $this->formElement($form->get('submit')); ?>
+	
+<?= $this->form()->closeTag(); ?>
